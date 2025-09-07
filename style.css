@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(#517e86c4, #949fdf1a), url(img/banner1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #9F0F3E;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+
+.text_box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text_box h2 {
+    font-size: 90px;
+    font-weight: 900;
+    color: #881230;
+}
+
+.text_box #tituloPrincipal {
+    font-size: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: -1%;
+    margin-bottom: 1%;
+    color: #ffff;
+}
+
+.text_box p {
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #ffff;
+}
+
+.btnLink {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btnLink:hover {
+    border: 1px solid #881230;
+    background: #881230;
+    transition: 1s;
+}
+
+
+/*  Inicio sección cursos */
+
+.curso {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.bloquePagina {
+    position: relative;
+    margin: 0px !important;
+    padding: 0px;
+}
+
+.lineaVertical {
+    widtH: 2px;
+    height: 100px;
+    background: #881230;
+    margin: 0 auto 40px;
+}
+
+.Limpiar {
+    clear: both;
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: 800;
+    margin: 15px 0;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #881230;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.fila {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.columnaCurso {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.columnaCurso h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    line-height: 1.1;
+}
+
+.columnaCurso:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Fin de sección de cursos */
+
+/* Inicio de sección de sedes */
+
+.sede {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.columnaSede {
+    position: relative;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.columnaSede img {
+    width: 100%;
+    display: block;
+}
+
+.capa {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.capa:hover {
+    /* background: rgba(226, 0, 0, 0.7); */
+    background: #24f8c741;
+}
+
+.capa h3 {
+    position: absolute;
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.capa:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* Fin de seccion de sedes */
+
+/* Inicio de seccion de testimonios */
+
+.testimonios {
+    margin: auto;
+    width: 80%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.columnaTestimonio {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.columnaTestimonio img {
+    height: 60px;
+    width: 60px;
+    margin-left: 5px;
+    margin-right: 25px;
+    border-radius: 50%;
+}
+
+.columnaTestimonio p {
+    padding: 0;
+}
+
+.columnaTestimonio h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* Fin de la sección de testimonios */
+
+/* Inicio de la sección banner de abajo */
+
+.banner {
+    margin: 50px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(img/recibidos.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner h1 {
+    font-size: 58px;
+    font-weight: 800;
+    margin: 15px 0;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+/* Fin de la sección banner de abajo */
+
+/* Inicio de la seccion de footer */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    font-weight: 600;
+    margin-bottom: 13px;
+    margin-top: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    color: #881230;
+}
+
+hr {
+    border: 0.01px solid #7777772a;
+}
+
+/* Fin de la sección de footer */
