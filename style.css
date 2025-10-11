@@ -177,8 +177,7 @@ p {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-
-/* Fin de sección de cursos */
+    /* Fin de sección de cursos */
 
 /* Inicio de sección de sedes */
 
@@ -335,7 +334,7 @@ hr {
 
 /* Inicio de sección Acerca de*/
 
-.Sub-header {
+.Sub-headerAcerca {
     height: 50vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/acerca.jpg);
@@ -345,7 +344,7 @@ hr {
     color: #fff;
 }
 
-.Sub-header h1 {
+.Sub-headerAcerca h1 {
     margin-top: 100px;
     color: #ddd
 }
@@ -387,3 +386,62 @@ hr {
     transition: 1s;
 }
 /* Fin de seccion acerca de */
+
+
+/* Inicio de sección Contacto*/
+
+
+.Sub-headerContacto {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/contacto.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.Sub-headerContacto h1 {
+    margin-top: 100px;
+    color: #ddd
+}
+.localizacion {
+    width: 60%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.localizacion iframe {
+    width: 100%;
+}
+
+
+.contacto {
+    width: 50%;
+    margin: auto;
+}
+
+
+.columnaContenido {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+}
+
+
+.columnaContenido input, .columnaContenido textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+
+/* Fin de sección Contacto*/
