@@ -472,7 +472,7 @@ form {
 
 
 .materias-col {
-    position: relative
+    position: relative;
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 5%;
