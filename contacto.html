@@ -34,11 +34,11 @@
 
     <section class="contacto">
             <div class="columnaContenido">
-                <form>
-                    <input type="text" placeholder="Ingrese su nombre" required>
-                    <input type="email" placeholder="Ingrese Email" required>
-                    <input type="text" placeholder="Ingrese Asunto" required>
-                    <textarea rows="8" placeholder="Mensaje" required></textarea>
+                <form id="formulario" novalidate>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                    <input type="email" id="email" placeholder="Ingrese Email" required>
+                    <input type="text" id="asunto" placeholder="Ingrese Asunto" required>
+                    <textarea rows="8" id="mensaje" placeholder="Mensaje" required></textarea>
                     <button type="submit" class="btnLink btn">Enviar Mensaje</button>
                 </form>
             </div>
@@ -58,6 +58,22 @@
         <p>Copyright © 2025</p>
     </section>
     <!-- Fin de footer -->
-</body>
 
+<script>
+document.getElementById("formulario").addEventListener("submit", function(e){
+  e.preventDefault();
+  const nombre = document.getElementById("nombre").value;
+  const email = document.getElementById("email").value;
+  const mensaje = document.getElementById("mensaje");
+
+  if(nombre === "" || !email.includes("@")){
+    alert("Por favor completá todos los campos correctamente.");
+
+  } else {
+    alert("¡Registro exitoso!");
+    this.reset();
+  }
+});
+</script>
+</body>
 </html>
