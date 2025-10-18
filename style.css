@@ -470,16 +470,18 @@ form {
     padding-top: 60px;
 }
 
+
 .materias-col {
-    flex-basis: 31%;
+    position: relative
+    flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
 }
 
 .materias-col img {
-    height: 280px;
-    width: 500px;
+    height: 50%;
+    width: 95%;
     transition: 0.5s;
     border-radius: 10px;
 }
