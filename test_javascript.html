@@ -8,10 +8,17 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <style>
+    body { font-family: Arial; background: #f5f5f5; text-align: center; padding: 30px; }
+    .pregunta { font-size: 18px; margin-bottom: 10px; }
+    button { margin: 5px; padding: 8px 15px; border: none; border-radius: 5px; cursor: pointer; background-color: #838383; color: white; }
+    button:hover { background-color: #c06b1b; }
+    #resultado { font-weight: bold; margin-top: 20px; }
+    </style>
 </head>
 
 <body>
-    <section class="Sub-headerAcerca">
+    <section class="Sub-headerCursos">
         <nav>
             <div class="nav-links" id="navLinks">
                 <ul>
@@ -23,31 +30,24 @@
                 </ul>
             </div>
         </nav>
-        <h1>Acerca de</h1>
+        <h1>Nuestros cursos</h1>
     </section>
 
-    <!-- Inicio de sección Acerca de -->
+    <!-- Inicio de sección test -->
 
-    <section class="acerca">
-        <div class="fila">
-            <div class="acerca-col">
-                <h1>Somos la Universidad Abierta Interamericana</h1>
-                <p>La Universidad Abierta Interamericana, fundada en 1995, desarrolla un Proyecto Académico, que manifiesta el compromiso con la educación en un camino de esfuerzo permanente para dar respuestas a las demandas sociales, culturales y políticas que los tiempos actuales requieren. <br>
-                   La UAI es una universidad privada, laica, autónoma, plural y sin fines de lucro.</p>
-                <a href="https://www.uai.edu.ar" target="_blank" class="btnLink btn">VISITA NUESTRO SITIO</a>
-            </div>
-            <div class="acerca-col">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NGV2ScjsSeQ?si=COSaAAKA1p5h_lwR&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
+  <h1>Test de JavaScript</h1>
+  <div id="quiz"></div>
+  <p id="resultado"></p>
+  <a href="cursos.html" class="btnLink btn">Volver</a>
 
-    <!-- Fin de sección Acerca de -->
+
+<script src="JS/script.js" defer></script>
+
 
     <!-- Inicio de footer -->
     <section class="footer">
         <hr>
-        <h4>Acerca de</h4>
+        <h4>Contacto</h4>
         <p>Centro de e-learning UAI es una creación de la <a href="https://www.uai.edu.ar" target="_blank">Universidad Abierta Interamericana</a>
         </p>
 
@@ -55,6 +55,8 @@
         <p>Copyright © 2025</p>
     </section>
     <!-- Fin de footer -->
+
+
 </body>
 
 </html>
